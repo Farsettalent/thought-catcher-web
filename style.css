@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #F7F5F2;
+    color: #2A2A2A;
+}
+
+.screen {
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    margin-bottom: 16px;
+    font-size: 22px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 120px;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 16px;
+    background: #FFF;
+    margin-bottom: 16px;
+}
+
+label.label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #CCC;
+    margin-bottom: 16px;
+    background: #FFF;
+}
+
+.toggle {
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.primaryBtn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: #2FA8A0;
+    color: white;
+    border-radius: 8px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.secondaryBtn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #2FA8A0;
+    background: none;
+    color: #2FA8A0;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.micBtn {
+    width: 100%;
+    padding: 12px;
+    background: #D9B877;
+    border: none;
+    color: black;
+    border-radius: 8px;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.entryCard {
+    background: #FFF;
+    padding: 12px;
+    border-radius: 10px;
+    border-left: 6px solid #2FA8A0;
+}
+
+.bottomNav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    border-top: 1px solid #CCC;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.bottomNav button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    padding: 6px 10px;
+}
