@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thought Catcher</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <!-- MAIN CONTAINER -->
+    <div id="app">
+
+        <!-- TIMELINE SCREEN -->
+        <section id="timelineScreen" class="screen">
+            <h2>Your Thoughts</h2>
+            <div id="timelineList" class="list"></div>
+        </section>
+
+        <!-- CAPTURE SCREEN -->
+        <section id="captureScreen" class="screen hidden">
+            <h2>New Entry</h2>
+
+            <textarea id="captureText" placeholder="Speak or type your thought..."></textarea>
+
+            <button id="micBtn" class="micBtn">🎙 Speak</button>
+
+            <label class="label">Type</label>
+            <select id="typeSelect">
+                <option value="TRIGGER">Trigger</option>
+                <option value="MEMORY">Memory</option>
+                <option value="QUESTION">Question</option>
+                <option value="INSIGHT">Insight</option>
+                <option value="GENERAL" selected>General</option>
+            </select>
+
+            <label class="label">Context</label>
+            <select id="contextSelect">
+                <option value="WORK">Work</option>
+                <option value="HOME">Home</option>
+                <option value="SOCIAL">Social</option>
+                <option value="DRIVING">Driving</option>
+                <option value="HEALTH">Health</option>
+                <option value="OTHER" selected>Other</option>
+            </select>
+
+            <label class="toggle">
+                <input type="checkbox" id="flagCheckbox">
+                Flag for next session
+            </label>
+
+            <button id="saveBtn" class="primaryBtn">Save</button>
+        </section>
+
+        <!-- EXPORT SCREEN -->
+        <section id="exportScreen" class="screen hidden">
+            <h2>Export for Therapy</h2>
+            <p>Select timeframe:</p>
+
+            <select id="exportRange">
+                <option value="7">Last 7 days</option>
+                <option value="14">Last 14 days</option>
+                <option value="30" selected>Last 30 days</option>
+                <option value="all">All entries</option>
+            </select>
+
+            <button id="generateExport" class="primaryBtn">Generate Export</button>
+
+            <textarea id="exportOutput" class="exportBox" readonly></textarea>
+            <button id="copyExport" class="secondaryBtn">Copy</button>
+        </section>
+
+    </div>
+
+    <!-- BOTTOM NAV -->
+    <nav class="bottomNav">
+        <button data-target="timelineScreen">📂 Timeline</button>
+        <button data-target="captureScreen">➕ Capture</button>
+        <button data-target="exportScreen">📤 Export</button>
+    </nav>
+
+    <script src="app.js"></script>
+</body>
+</html>
