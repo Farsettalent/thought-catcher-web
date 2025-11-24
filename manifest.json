@@ -1,0 +1,9 @@
+{
+  "name": "Thought Catcher",
+  "short_name": "ThoughtCatcher",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F5F2",
+  "theme_color": "#2FA8A0",
+  "icons": []
+}
